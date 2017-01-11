@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+   -->
+   <view class="box">
+      <view class="proposition restTime">
+          <view>正方</view>
+          <view>{{proposition.name}}</view>
+          <view class="circle" >
+              <text>{{proposition.restTime}}</text>
+          </view>
+          <button class="tick" size="mini" wx:if="{{proposition.status==false&&dailog==false}}" data-type="proposition" catchtap="tick" >开始</button>
+          <button class="tick" size="mini" wx:if="{{proposition.status==true&&dailog==false}}" data-type="proposition" catchtap="stop">暂停</button>
+      </view>
+      <view class="opposition restTime">
+          <view>反方</view>
+          <view>{{opposition.name}}</view>
+          <view class="circle">
+              <text>{{opposition.restTime}}</text>
+          </view>
+          <button class="tick" size="mini" wx:if="{{opposition.status==false&&dailog==false}}" data-type="opposition" catchtap="tick">开始</button>
+          <button class="tick" size="mini" wx:if="{{opposition.status==true&&dailog==false}}" data-type="opposition" catchtap="stop">暂停</button>
+      </view>
+   </view>
+   <view class="tab">
+        <button size="mini" wx:if="{{dailog==true}}">切换</button>
+   </view>
+   <view class="box" class="step">
+        <view class="restTime">
+            <button size="mini" class="prev">上一步</button>
+            <button size="mini" class="next">下一步</button>
+        </view>
+   </view>
+
+</view>

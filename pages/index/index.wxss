@@ -1,0 +1,28 @@
+/**index.wxss**/
+.box{
+  display:-webkit-box;
+}
+.restTime{
+  -webkit-box-flex:1.0;
+  text-align: center;
+}
+.circle{
+  border: 1rpx darkred solid;
+  border-radius: 75px;
+  height: 150rpx;
+  width: 150rpx;
+  margin: auto;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content:center;
+  align-items:Center;
+}
+.tick{
+  margin-top: 30rpx
+}
+.tab{
+  text-align: center;
+}
+.prev,.next{
+  margin: 20rpx;
+}
